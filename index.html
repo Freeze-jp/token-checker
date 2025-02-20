@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Token Alive Check Tool</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px; /* 横幅の最大値を設定 */
+    }
+    textarea, input, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Token Alive Check Tool</h1>
+    <textarea id="tokenInput" placeholder="Tokenを改行区切りで入力"></textarea>
+    <input type="text" id="intervalInput" value="1" placeholder="送信間隔 [秒]">
+    <button id="aliveCheckBtn">Token生存確認開始</button>
+    <textarea id="resultOutput" readonly placeholder="結果がここに表示されます"></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
